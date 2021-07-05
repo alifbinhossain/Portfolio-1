@@ -1,0 +1,129 @@
+.btn {
+  display: inline-block;
+  width: fit-content;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem 3rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-right: 4rem;
+  &-hire {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: darkcyan;
+      border-radius: 4px;
+      z-index: -2;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      // background-color: darken(darkcyan, 5%);
+      background-color: #fff;
+      transition: all 0.4s;
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: darkcyan;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  &-cv {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #b2c251;
+      border-radius: 4px;
+      z-index: -2;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0%;
+      height: 100%;
+      // background-color: darken(#B2C251, 5%);
+      background-color: #fff;
+      transition: all 0.4s;
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #b2c251;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn-resume {
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  color: white;
+  border: 2px solid currentColor;
+  padding: 1.4rem 3.2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  backface-visibility: hidden;
+  margin-right: 4rem;
+
+  &:hover {
+    background-color: white;
+    color: darkcyan;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+}
+
+.btn-learn {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+
+  span {
+    transition: all 0.3s;
+    margin-left: 0.2rem;
+  }
+
+  &:hover span {
+    margin-left: 1.2rem;
+  }
+}

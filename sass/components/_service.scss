@@ -1,0 +1,32 @@
+.service {
+  display: flex;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-grey-dark-1;
+    padding: 6rem;
+    border-radius: 3px;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &-icon-box {
+      height: 14rem;
+      width: 14rem;
+      border-radius: 50%;
+      background-color: darkcyan;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 4rem;
+    }
+
+    &-icon {
+      color: $color-white;
+      font-size: 7rem;
+      display: block;
+    }
+  }
+}

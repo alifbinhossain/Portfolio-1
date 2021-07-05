@@ -1,0 +1,23 @@
+////Importing ABSTRACT Files
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+////Importing BASE Files
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utlities";
+
+////Importing COMPONENTS
+@import "components/navigation";
+@import "components/buttons";
+@import "components/service";
+@import "components/contact";
+
+////Importing LAYOUT
+@import "layouts/header";
+@import "layouts/footer";
+
+////Importing PAGES
+@import "pages/home";

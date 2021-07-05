@@ -1,0 +1,45 @@
+.footer {
+  text-align: center;
+  &__copyright {
+    display: block;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  &__social-link:link,
+  &__social-link:visited {
+    text-decoration: none;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      background-color: $color-white;
+    }
+  }
+
+  &__social-link:hover &__social-icon {
+    color: darkcyan;
+  }
+
+  &__social-icon {
+    color: $color-white;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+  }
+}
